@@ -1,2 +1,1 @@
-# Profile
-Lebenslauf
+# CV
