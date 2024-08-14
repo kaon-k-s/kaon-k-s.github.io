@@ -1,0 +1,135 @@
+/* style.css */
+html {
+    background-color: #D5CFC3;
+    padding: 20px;
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+}
+
+.cv-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #F6F1EB;
+    padding: 10px;
+    border: solid 2px #CFA96B;
+}
+
+.left-column {
+    flex-grow: 1;
+    padding: 20px;
+
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+
+}
+
+.right-column {
+    flex-grow: 3;
+    padding: 20px;
+}
+
+.profile-photo {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+h1, h2
+{
+    margin: 0;
+    padding: 0;
+    color: #37332A;
+}
+h1 {
+    font-weight: normal;
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #FFF9F4;
+    border-bottom: 1px dashed black;
+}
+
+.underline {
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 0.9em;
+    margin: 3px;
+}
+
+#job-title {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #F6F1EB;
+}
+
+img {
+    border: 1px solid #CFA96B;
+    border-radius: 4px;
+    padding: 10px;
+    width: 150px;
+}
+
+.experience {
+    margin-top: 50px;
+}
+
+.experience-item {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #CFA96B;
+}
+
+.experience-job-title {
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: square;
+    font-size: 1em;
+}
+
+.achievements {
+    font-size: 1em;;
+}
+
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+
+    .left-column {
+        order: 2;
+    }
+    .right-column {
+        order: 1;
+    }
+    .profile-photo {
+        order: 6;
+    }
+    .contact {
+        order: 5;
+    }
+    .education {
+        order: 1;
+    }
+    .languages {
+        order: 2;
+    }
+    .applications {
+        order: 3;
+    }
+    .soft-skills {
+        order: 4;
+    }
+}
